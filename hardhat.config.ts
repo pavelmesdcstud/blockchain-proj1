@@ -3,9 +3,10 @@ import { configVariable, defineConfig } from "hardhat/config";
 import hardhatEthers from "@nomicfoundation/hardhat-ethers";
 import hardhatMocha from "@nomicfoundation/hardhat-mocha";
 import hardhatTypechain from "@nomicfoundation/hardhat-typechain";
+import hardhatUpgrades from "@openzeppelin/hardhat-upgrades";
 
 export default defineConfig({
-  plugins: [hardhatToolboxViemPlugin, hardhatEthers, hardhatMocha, hardhatTypechain],
+  plugins: [hardhatToolboxViemPlugin, hardhatEthers, hardhatMocha, hardhatTypechain,hardhatUpgrades],
   solidity: {
     profiles: {
       default: {
